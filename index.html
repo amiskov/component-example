@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    img {
+        display: block;
+        float: left;
+        margin-right: 30px;
+        border: 1px solid #f00;
+        width: 200px;
+        height: 300px;
+    }
+
+    .price {
+        float: left;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .product-props {
+        float: left;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 0 30px;
+        padding: 0;
+    }
+
+    .product-prop {
+        height: 30px;
+        padding: 5px 10px;
+        margin: 0 0 5px;
+        cursor: pointer;
+        border: 1px solid #666;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .product-prop:hover {
+        border-color: red;
+    }
+    </style>
+</head>
+
+<body id="doc">
+    <img id="productPicture" src="img/tshirt_white.jpg" alt="">
+    <div class="product-props">
+        <ul id="sizeList">
+            <li class="product-prop" data-type="size" data-value="s">Small</li>
+            <li class="product-prop" data-type="size" data-value="m">Medium</li>
+            <li class="product-prop" data-type="size" data-value="l">Large</li>
+        </ul>
+        <ul id="colorList">
+            <li class="product-prop" data-type="color" data-value="white">white</li>
+            <li class="product-prop" data-type="color" data-value="yellow">yellow</li>
+            <li class="product-prop" data-type="color" data-value="green">green</li>
+        </ul>
+    </div>
+    <br clear="all">
+    <div class="price">
+        <span id="priceVal" class="price__val">100</span>
+        <span class="price__currency">₽</span>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
